@@ -1,0 +1,12 @@
+packages
+pubspec.lock
+.project
+.buildlog
+tags
+test/data/input/example
+test/data/output/
+test/perf/input/example
+test/perf/output/
+extension/output/
+out/
+tool/compile_mirrors.dart

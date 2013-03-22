@@ -1,0 +1,6 @@
+name: web_ui_tab_demo
+description: A simple Bootstrap compatible tab demo application
+dependencies:
+  browser: any
+  js: any
+  web_ui: any

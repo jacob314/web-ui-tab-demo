@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tab Demo</title>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+    <link rel="components" href="tabs.html">
+    <link rel="components" href="pane.html">
+  </head>
+  <body>
+    <ul>
+      <template iterate="item in items">
+        <li>
+          <input value="{{item.name}}"/>
+        </li>
+      </template>
+      <li><button on-click="add()">+</button></li>
+    </ul>    
+    <x-tabs>
+      <template iterate="item in items">
+        <x-pane pane-title="{{item.name}}">
+          Description text for {{item.name}}
+        </x-pane>
+      </template>
+    </x-tabs>
+
+    <script type="application/dart" src="tabdemo.dart"></script>
+  </body>
+</html>
