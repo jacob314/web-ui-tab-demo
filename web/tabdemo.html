@@ -12,7 +12,7 @@
     <ul>
       <template iterate="item in items">
         <li>
-          <input value="{{item.name}}"/>
+          <input bind-value="item.name"/>
         </li>
       </template>
       <li><button on-click="add()">+</button></li>
