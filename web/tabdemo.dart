@@ -1,13 +1,15 @@
 import 'dart:html';
 import 'package:web_ui/web_ui.dart';
 
+@observable
 class Item {
   String name;
 
   Item(this.name); 
 }
 
-final items = <Item>[];
+@observable
+final items = new ObservableList<Item>();
 
 void add() {
   items.add(new Item('More Tea'));

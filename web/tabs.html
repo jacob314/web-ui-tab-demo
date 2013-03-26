@@ -1,26 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-    <element name="x-tabs" constructor="Tabs" extends="div">
-      <template>
-        <div class="tabbable">
-          <ul class="nav nav-tabs">
-            <template iterate="pane in panes">
-              <li class="{{pane.selected ? 'active' : ''}}">
-                <a href="#" on-click="select(pane)">
-                  {{pane.paneTitle}}
-                </a>
-              </li>
-            </template>
-          </ul>
-          <div class="tab-content">
-            <content></content>
-          </div>
-        </div>
-      </template>
-      <script type="application/dart" src='tabs.dart'></script>
-    </element>
-  </body>
-</html>
+<!DOCTYPE html><html><body>
+<element name="x-tabs" constructor="Tabs" extends="div">
+  <template>
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <template iterate="pane in panes">
+          <li class="{{pane.selected ? 'active' : ''}}">
+            <a href="#" on-click="select(pane)">{{pane.paneTitle}}</a>
+          </li>
+        </template>
+      </ul>
+      <div class="tab-content"><content></content></div>
+    </div>
+  </template>
+  <script type="application/dart" src='tabs.dart'></script>
+</element>
+</body></html>
